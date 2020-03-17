@@ -1,0 +1,31 @@
+.number {
+    background-color: var(--gray);
+    font-size: 12px;
+}
+
+.number .number__block {
+    display: flex;
+    padding: 18px 0;
+    width: 300px;
+    margin: 0 auto;
+}
+
+.number .number__title {
+    text-align: center;
+    flex: 0.9;
+}
+
+.number .number__text {
+    flex: 1.1;
+    width: 160px;
+}
+
+.number .number__text .number__text__number {
+    font-weight: bold;
+    padding-bottom: 9px;
+}
+
+.number .number__text .number__text__danger {
+    color: var(--danger);
+    font-size: 10px;
+}

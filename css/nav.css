@@ -1,0 +1,31 @@
+.nav {
+    font-size: 14px;
+    font-weight: bold;
+    text-align: center;
+    padding-top: 30px;
+    border-bottom: 1px solid var(--border);
+}
+
+.nav .nav__block {
+    display: flex;
+}
+
+.nav .nav__left {
+    flex: 1;
+}
+
+.nav .nav__left__active {
+    flex: 1;
+    padding-bottom: 7px;
+    border-bottom: 3px solid var(--main);
+}
+
+.nav .nav__right {
+    flex: 1;
+}
+
+.nav .nav__right__active {
+    flex: 1;
+    padding-bottom: 7px;
+    border-bottom: 3px solid var(--main);
+}

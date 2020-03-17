@@ -1,0 +1,176 @@
+body {
+    padding: 0;
+    margin: 0;
+    height: 100%;
+    font-family: "Noto Sans CJK KR", sans-serif;
+    font-size: 12px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+         box-sizing: border-box;
+    word-break: keep-all;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --main: #0200b4;
+    --danger: #ff3400;
+    --gray: #e9e9e9;
+    --active: #00efff;
+    --border: #707070;
+}
+
+#sig-canvas{
+    border:1px solid var(--gray);
+    cursor: crosshair;
+}
+
+header {
+    height: 40px;
+    background-color: var(--main);
+    display: flex;
+    align-items: center;
+}
+
+header img {
+    margin-left: 10px;
+}
+
+footer {
+    background-color: var(--gray);
+    height: 50px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    font-size: 7px;
+    padding: 0 20px;
+}
+
+hr {
+    margin: 10px 0;
+}
+
+.btn {
+    border-style: none;
+    background-color: var(--main);
+    width: 100%;
+    color: white;
+    font-size: 15px;
+    padding: 15px 0;
+}
+
+
+.main {
+    text-align: center;
+    padding: 30px 70px;
+}
+
+.main h3 {
+    color: var(--main);
+    font-size:15px;
+    padding-bottom: 30px;
+}
+
+.main h1 {
+    color: var(--active);
+    font-size: 50px;;
+}
+.main hr {
+        width:260px;
+        margin: 10px auto;
+    }
+
+
+.main__sign-top {
+    margin-top:20px;
+}
+
+
+.main__sign-top .main__sign-top__name{
+    font-weight: bold;
+}
+
+.main__sign-top div + div{
+    margin-top:10px;
+}
+
+.main__sign-bottom .main__sign-bottom__name{
+    font-weight: bold;
+}
+
+.main__sign-bottom div + div{
+    margin-top:10px;
+}
+
+h4 {
+    color: var(--danger);
+    text-align: center;
+    padding: 0 20px;
+    line-height: 18px;
+    letter-spacing: -0.5px;
+    font-size: 13px;
+}
+
+.form {
+    padding: 20px 20px;
+}
+
+.form .form__input {
+    display: flex;
+    padding-bottom:30px;
+}
+
+.form .form__input label {
+    flex: 0.2;
+}
+
+.form .form__input input{
+    flex: 0.8;
+    border-style: none;
+    border-bottom: 1px solid var(--border);
+    padding-bottom: 10px;
+}
+
+
+
+
+@media (min-width:1020px){
+    .header__block {
+         width: 1020px;
+         margin:0 auto;
+    }
+
+    .body__block {
+        width:1020px;
+        margin: 0 auto;
+    }
+    .form {
+        display: flex;
+        align-items: center;
+    }
+    .form .form__input {
+        flex: 0.7;
+        padding-bottom: 0
+    }
+    .form .btn {
+        flex: 0.3
+    }
+ }
+
+ @media (min-width:768px){
+     .form {
+        width: 720px;
+        margin: 0 auto;
+        
+     }
+     .form .form__input {
+         margin-right:40px;
+     }
+     .form .btn {
+        padding: 10px 0;
+     }
+ }
+ 
