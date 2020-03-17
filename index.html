@@ -1,181 +1,211 @@
 <!DOCTYPE html>
 <html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="css/index.css" />
+        <link rel="stylesheet" href="css/top.css" />
+        <link rel="stylesheet" href="css/number.css" />
+        <link rel="stylesheet" href="css/nav.css" />
+        <link rel="stylesheet" href="css/main.css" />
+        <link rel="stylesheet" href="css/media.css" />
+        <link rel="stylesheet" href="css/common.css" />
 
-<head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="css/index.css" />
-    <link rel="stylesheet" href="css/top.css" />
-    <link rel="stylesheet" href="css/number.css" />
-    <link rel="stylesheet" href="css/nav.css" />
-    <link rel="stylesheet" href="css/main.css" />
-    <link rel="stylesheet" href="css/media.css" />
-    <link rel="stylesheet" href="css/explain.css">
+        <title>corona project</title>
+    </head>
 
-    <title>corona project</title>
-</head>
-
-<body>
-    <div class="modal">
-        <div class="modal__block">
-            
-        </div>
-    </div>
-    <div class="body">
-        <header>
-            <div class="header__block">
-                <img src="/svg/banner.svg" alt="" />
+    <body>
+        <div class="modal">
+            <div class="modal__block">
+                <p>
+                    이메일로 보내졌습니다.
+                </p>
+                <p>임상연구에 참가해주셔서 감사합니다.</p>
+                <button class="btn" onclick="onConfirm()">확인</button>
             </div>
-        </header>
-        <div class="top">
-            <div class="top__block">
-                <div class="top__title">
-                    <h2>현재임상진행 번호</h2>
-                    <div class="top__title__text">
-                        <div>경기도 성남시 분당구 삼평동 AAA센터</div>
-                        <img src="/svg/button_white.svg" alt="" />
-                    </div>
+        </div>
+        <div class="body">
+            <header>
+                <div class="header__block">
+                    <img src="/svg/banner.svg" alt="" />
                 </div>
-                <div class="top__number">
-                    <div>2020</div>
-                    <div>2020</div>
-                    <div>2020</div>
-                    <div>2020</div>
-                </div>
-            </div>
-
-        </div>
-        <div class="number">
-            <div class="number__block">
-                <div class="number__title">다음 실험대기 번호</div>
-                <div class="number__text">
-                    <div class="number__text__number">
-                        1028, 1029, 1030, 1031, 1032
-                    </div>
-                    <div class="number__text__danger">
-                        해당번호 참가자들은 서둘러 임상 장소로 와주십시오.
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="nav">
-            <div class="nav__block">
-                <div class="nav__left__active">임상연구참가신청</div>
-                <div class="nav__right">임상연구설명</div>
-            </div>
-        </div>
-        <div class="main">
-            <div class="main__block">
-                <div class="main__padding">
-                    <div class="main__video">
-                        <h4>신청 매뉴얼영상</h4>
-                        <div></div>
-                    </div>
-                    <hr />
-                    <div class="main__agree-top">
-                        <h4>피험자 설명문 및 개인정보제공 동의서</h4>
-                        <textarea name="" id="" cols="30" rows="20">
-                        피험자 설명문 및 개인정보제공 동의서피험자 설명문 및 개인정보제공 동의서피험자 설명문 및 개인정보제공 동의서피험자 설명문 및 개인정보제공 동의서피험자 설명문 및 개인정보제공 동의서피험자 설명문 및 개인정보제공 동의서피험자 설명문 및 개인정보제공 동의서피험자 설명문 및 개인정보제공 동의서피험자 설명문 및 개인정보제공 동의서피험자 설명문 및 개인정보제공 동의서피험자 설명문 및 개인정보제공 동의서피험자 설명문 및 개인정보제공 동의서피험자 설명문 및 개인정보제공 동의서피험자 설명문 및 개인정보제공 동의서피험자 설명문 및 개인정보제공 동의서피험자 설명문 및 개인정보제공 동의서피험자 설명문 및 개인정보제공 동의서
-                    </textarea>
-                        <div class="main__agree-top__block">
-                            <div class="main__agree-top__text">
-                                상기 피험자 설명문 및 피험자 관련 동의서를 읽고, 그 내용에
-                                동의합니다.
-                            </div>
-                            <div class="main__agree-top__button">
-                                <div class="main__agree-top__button-left">
-                                    <img src="/svg/button.svg" alt="" />
-                                    <div>동의합니다</div>
-                                </div>
-                                <div class="main__agree-top__button-right">
-                                    <img src="/svg/button.svg" alt="" />
-                                    <div>동의하지 않습니다</div>
-                                </div>
-                            </div>
+            </header>
+            <div class="top">
+                <div class="top__block">
+                    <div class="top__title">
+                        <h2>현재임상진행 번호</h2>
+                        <div class="top__title__text">
+                            <div>경기도 성남시 분당구 삼평동 AAA센터</div>
+                            <img src="/svg/button_white.svg" alt="" />
                         </div>
                     </div>
-                    <hr />
-                    <div class="main__agree-bottom">
-                        <h4>피험자 설명문 및 개인정보제공 동의서</h4>
-
-                        <div class="main__agree-bottom__block">
-                            <div class="main__agree-bottom__text">
-                                최근 1개월 이전에 발열을 동반한 기침 등의 호흡기
-                                증상이있었습니까?
-                            </div>
-                            <div class="main__agree-bottom__button">
-                                <div class="main__agree-bottom__button-left">
-                                    <img src="/svg/button.svg" alt="" />
-                                    <div>동의합니다</div>
-                                </div>
-                                <div class="main__agree-bottom__button-right">
-                                    <img src="/svg/button.svg" alt="" />
-                                    <div>동의하지 않습니다</div>
-                                </div>
-                            </div>
+                    <div class="top__number">
+                        <div>2020</div>
+                        <div>2020</div>
+                        <div>2020</div>
+                        <div>2020</div>
+                    </div>
+                </div>
+            </div>
+            <div class="number">
+                <div class="number__block">
+                    <div class="number__title">다음 실험대기 번호</div>
+                    <div class="number__text">
+                        <div class="number__text__number">
+                            1028, 1029, 1030, 1031, 1032
+                        </div>
+                        <div class="number__text__danger">
+                            해당번호 참가자들은 서둘러 임상 장소로 와주십시오.
                         </div>
                     </div>
-                    <div class="main__form">
-                        <div class="main__form__block-top">
-                            <div class="main__form__input">
-                                <label for="">성명</label>
-                                <input type="text" placeholder="성명을 기입해주세요" />
-                            </div>
-                            <div class="main__form__input main__form__sign">
-                                <label for="">서명</label>
-                                <div>
-                                    <canvas id="sig-canvas" width="200" height="80">
-                                    </canvas>
-                                </div>
-
-                            </div>
+                </div>
+            </div>
+            <div class="nav">
+                <div class="nav__block">
+                    <div class="nav__left active" onclick="navLeft()">
+                        임상연구참가신청
+                    </div>
+                    <div class="nav__right" onclick="navRight()">
+                        임상연구설명
+                    </div>
+                </div>
+            </div>
+            <div class="main">
+                <div class="main__block">
+                    <div class="main__padding">
+                        <div class="main__video">
+                            <h4>신청 매뉴얼영상</h4>
                             <div></div>
                         </div>
-                        <div class="main__form__block-bottom">
-                            <div class="main__form__input">
-                                <label for="">실험날짜</label>
-                                <input type="text" placeholder="2020 / 3 / -" />
+                        <hr />
+                        <div class="main__agree-top">
+                            <h4>피험자 설명문 및 개인정보제공 동의서</h4>
+                            <textarea name="" id="" cols="30" rows="20">
+피험자 설명문 및 개인정보제공 동의서피험자 설명문 및 개인정보제공 동의서피험자 설명문 및 개인정보제공 동의서피험자 설명문 및 개인정보제공 동의서피험자 설명문 및 개인정보제공 동의서피험자 설명문 및 개인정보제공 동의서피험자 설명문 및 개인정보제공 동의서피험자 설명문 및 개인정보제공 동의서피험자 설명문 및 개인정보제공 동의서피험자 설명문 및 개인정보제공 동의서피험자 설명문 및 개인정보제공 동의서피험자 설명문 및 개인정보제공 동의서피험자 설명문 및 개인정보제공 동의서피험자 설명문 및 개인정보제공 동의서피험자 설명문 및 개인정보제공 동의서피험자 설명문 및 개인정보제공 동의서피험자 설명문 및 개인정보제공 동의서</textarea
+                            >
+                            <div class="main__agree-top__block">
+                                <div class="main__agree-top__text">
+                                    상기 피험자 설명문 및 피험자 관련 동의서를
+                                    읽고, 그 내용에 동의합니다.
+                                </div>
+                                <div class="main__agree-top__button">
+                                    <div class="main__agree-top__button-left">
+                                        <img src="/svg/button.svg" alt="" />
+                                        <div>동의합니다</div>
+                                    </div>
+                                    <div class="main__agree-top__button-right">
+                                        <img src="/svg/button.svg" alt="" />
+                                        <div>동의하지 않습니다</div>
+                                    </div>
+                                </div>
                             </div>
-                            <div class="main__form__input">
-                                <label for="">실험장소</label>
-                                <input type="text" placeholder="장소를 선택해주세요" />
-                            </div>
-                            <button class="btn">다음</button>
                         </div>
+                        <hr />
+                        <div class="main__agree-bottom">
+                            <h4>피험자 설명문 및 개인정보제공 동의서</h4>
 
+                            <div class="main__agree-bottom__block">
+                                <div class="main__agree-bottom__text">
+                                    최근 1개월 이전에 발열을 동반한 기침 등의
+                                    호흡기 증상이있었습니까?
+                                </div>
+                                <div class="main__agree-bottom__button">
+                                    <div
+                                        class="main__agree-bottom__button-left"
+                                    >
+                                        <img src="/svg/button.svg" alt="" />
+                                        <div>동의합니다</div>
+                                    </div>
+                                    <div
+                                        class="main__agree-bottom__button-right"
+                                    >
+                                        <img src="/svg/button.svg" alt="" />
+                                        <div>동의하지 않습니다</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="main__form">
+                            <div class="main__form__block-top">
+                                <div class="main__form__input">
+                                    <label for="">성명</label>
+                                    <input
+                                        type="text"
+                                        placeholder="성명을 기입해주세요"
+                                    />
+                                </div>
+                                <div class="main__form__input main__form__sign">
+                                    <label for="">서명</label>
+                                    <div>
+                                        <canvas
+                                            id="sig-canvas"
+                                            width="200"
+                                            height="80"
+                                        >
+                                        </canvas>
+                                    </div>
+                                </div>
+                                <div></div>
+                            </div>
+                            <div class="main__form__block-bottom">
+                                <div class="main__form__input">
+                                    <label for="">실험날짜</label>
+                                    <input
+                                        type="text"
+                                        placeholder="2020 / 3 / -"
+                                    />
+                                </div>
+                                <div class="main__form__input">
+                                    <label for="">실험장소</label>
+                                    <input
+                                        type="text"
+                                        placeholder="장소를 선택해주세요"
+                                    />
+                                </div>
+                                <form method="GET" action="/submit">
+                                    <button class="btn" type="submit">
+                                        다음
+                                    </button>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="explain">
+                        <div class="explain__video-top">
+                            <h4>신청 매뉴얼영상</h4>
+                            <div></div>
+                        </div>
+                        <div class="explain__video-bottom">
+                            <h4>신청 매뉴얼영상</h4>
+                            <div></div>
+                        </div>
                     </div>
                 </div>
-
-                <div class="explain">
-                    <div class="explain__video-top">
-                        <h4>신청 매뉴얼영상</h4>
-                        <div></div>
-                    </div>
-                    <div class="explain__video-bottom">
-                        <h4>신청 매뉴얼영상</h4>
-                        <div></div>
+            </div>
+            <div class="explain">
+                <div class="explain__block">
+                    <div class="explain__padding">
+                        <div class="explain__video">
+                            <h4>실험영상1</h4>
+                            <div></div>
+                        </div>
+                        <div class="explain__video">
+                            <h4>실험영상2</h4>
+                            <div></div>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
-        <div class="explain">
-            <div class="explain__block">
-                <div class="explain__padding">
-                    <div class="explain__video">
-                        <h4>실험영상1</h4>
-                        <div></div>
-                    </div>
-                    <div class="explain__video">
-                        <h4>실험영상2</h4>
-                        <div></div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <footer>전자동의서 시스템 개발사 굿윌헌팅(주)</footer>
+        <footer>전자동의서 시스템 개발사 굿윌헌팅(주)</footer>
 
-    <script src="/js/signature.js"></script>
-</body>
-
+        <script
+            src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+            integrity="sha256-pasqAKBDmFT4eHoN2ndd6lN370kFiGUFyTiUHWhU7k8="
+            crossorigin="anonymous"
+        ></script>
+        <script src="/js/signature.js"></script>
+        <script src="js/index.js"></script>
+    </body>
 </html>

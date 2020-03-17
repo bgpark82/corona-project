@@ -1,87 +1,23 @@
-body {
-    padding: 0;
-    margin: 0;
-    height: 100%;
-    font-family: "Noto Sans CJK KR", sans-serif;
-    font-size: 12px;
-    -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
-         box-sizing: border-box;
-         word-break: keep-all;
+/* explain */
+.explain {
+    display: none;
 }
 
-* {
-    margin: 0;
-    padding: 0;
+.explain__padding {
+    padding: 30px 20px;
 }
 
-:root {
-    --main: #0200b4;
-    --danger: #ff3400;
-    --gray: #e9e9e9;
-    --active: #00efff;
-    --border: #707070;
+.explain__video h4 {
+    color: var(--main);
+    font-size: 10px;
+    padding-bottom: 5px;
 }
 
-#sig-canvas{
-    border:1px solid var(--gray);
-    cursor: crosshair;
-}
-
-
-
-header {
-    height: 40px;
-    background-color: var(--main);
-    display: flex;
-    align-items: center;
-}
-
-header img {
-    margin-left: 10px;
-}
-
-footer {
+.explain__video div {
     background-color: var(--gray);
-    height: 50px;
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-    font-size: 7px;
-    padding: 0 20px;
+    height: 300px;
 }
 
-hr {
-    margin: 10px 0;
-}
-
-.btn {
-    border-style: none;
-    background-color: var(--main);
-    width: 100%;
-    color: white;
-    font-size: 15px;
-    padding: 15px 0;
-}
-
-.main {
-    /* display: none; */
-}
-
-.modal {
-    position: absolute;
-    top:0;
-    left:0;
-    background: rgba(0,0,0,0.5);
-    z-index: 100;
-    height:100%;
-    width: 100%;
-}
-
-.modal .modal__block {
-    z-index: 150;
-    background-color: white;
-    width:200px;
-    height: 200px;
-    
+.explain__video + .explain__video {
+    margin-top: 30px;
 }

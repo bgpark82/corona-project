@@ -10,11 +10,16 @@
     display: flex;
 }
 
-.nav .nav__left {
-    flex: 1;
+.nav .nav__block div:hover {
+    cursor: pointer;
 }
 
-.nav .nav__left__active {
+.nav .nav__left {
+    flex: 1;
+    padding-bottom: 10px;
+}
+
+.nav .nav__left.active {
     flex: 1;
     padding-bottom: 7px;
     border-bottom: 3px solid var(--main);
@@ -24,7 +29,7 @@
     flex: 1;
 }
 
-.nav .nav__right__active {
+.nav .nav__right.active {
     flex: 1;
     padding-bottom: 7px;
     border-bottom: 3px solid var(--main);
