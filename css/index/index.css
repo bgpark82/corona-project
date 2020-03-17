@@ -1,0 +1,132 @@
+/* explain */
+.explain {
+    display: none;
+}
+
+.explain__padding {
+    padding: 30px 20px;
+}
+
+.explain__video h4 {
+    color: var(--main);
+    font-size: 10px;
+    padding-bottom: 5px;
+}
+
+.explain__video div {
+    background-color: var(--gray);
+    height: 300px;
+}
+
+.explain__video + .explain__video {
+    margin-top: 30px;
+}
+
+/* media */
+@media (min-width: 1020px) {
+    .header__block {
+        width: 1020px;
+        margin: 0 auto;
+    }
+
+    .top__block {
+        width: 1020px;
+        margin: 0 auto;
+    }
+
+    .top__block .top__title {
+        flex-direction: row;
+    }
+    .top__block .top__title h2 {
+        margin-right: 30px;
+    }
+
+    .nav__block {
+        width: 1020px;
+        margin: 0 auto;
+    }
+
+    .main__block {
+        width: 1020px;
+        margin: 0 auto;
+    }
+
+    .main__agree-top__block {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin: 10px 0 30px 0;
+    }
+
+    .main__agree-top__block .main__agree-top__text {
+        flex: 1;
+    }
+
+    .main__agree-top__block .main__agree-top__button {
+        padding: 0;
+        flex: 1;
+    }
+
+    .main__agree-bottom__block {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-bottom: 50px;
+    }
+
+    .main__agree-bottom__block .main__agree-bottom__text {
+        flex: 1;
+    }
+
+    .main__agree-bottom__block .main__agree-bottom__button {
+        padding: 0;
+        flex: 1;
+    }
+
+    .main__form__block-top {
+        display: flex;
+        align-items: center;
+    }
+
+    .main__form__block-top > * {
+        flex: 0.33;
+        height: fit-content;
+    }
+
+    .main__form__block-top > div + div {
+        margin-left: 40px;
+    }
+
+    .main__form__block-bottom {
+        display: flex;
+        align-items: center;
+    }
+
+    .main__form__block-bottom > * {
+        flex: 0.33;
+    }
+
+    .main__form__block-bottom > div + div {
+        margin-left: 40px;
+    }
+
+    .main__form__block-bottom .btn {
+        margin-left: 40px;
+    }
+
+    .explain__block {
+        width: 1020px;
+        margin: 0 auto;
+    }
+
+    .explain__block .explain__padding {
+        padding: 30px 200px;
+    }
+}
+
+@media (max-width: 1020px) {
+    .top__block .top__title {
+        flex-direction: column;
+        align-items: center;
+    }
+}
